@@ -39,9 +39,9 @@ const PropertySearchForm = () => {
       {/* Toggle + Reset Button Row */}
       <div className="flex justify-between md:justify-start items-center mb-6 gap-4 flex-wrap">
         {/* Rent / Buy Toggle */}
-        <div className="relative flex bg-gray-200 rounded-full w-40 h-10 cursor-pointer">
+        <div className="relative flex bg-gray-200 rounded-full w-60 h-10 cursor-pointer">
           <div
-            className={`absolute top-0 h-full w-1/2 bg-blue-700 rounded-full transition-all duration-300 ${
+            className={`absolute top-0 h-full w-1/2 bg-[#01062d] rounded-full transition-all duration-300 ${
               type === "buy" ? "left-1/2" : "left-0"
             }`}
           ></div>
@@ -49,16 +49,16 @@ const PropertySearchForm = () => {
             className="flex-1 flex items-center justify-center z-10 text-sm font-medium"
             onClick={() => setType("rent")}
           >
-            <span className={type === "rent" ? "text-white" : "text-gray-600"}>
-              Rent
+            <span className={type === "rent" ? "text-white" : "text-[#01062d]"}>
+              For Rent
             </span>
           </div>
           <div
             className="flex-1 flex items-center justify-center z-10 text-sm font-medium"
             onClick={() => setType("buy")}
           >
-            <span className={type === "buy" ? "text-white" : "text-gray-600"}>
-              Buy
+            <span className={type === "buy" ? "text-white" : "text-[#01062d]"}>
+              For Sale
             </span>
           </div>
         </div>
@@ -92,31 +92,31 @@ const PropertySearchForm = () => {
         <div className="flex flex-col md:flex-row gap-4 md:items-end">
           {/* City Input */}
           <div className="flex flex-col w-full md:w-1/5">
-            <label className="text-sm font-medium mb-1 text-gray-700">
+            {/* <label className="bg-white text-sm font-medium mb-1 text-gray-700">
               City
-            </label>
+            </label> */}
             <input
               type="text"
               name="city"
               value={formData.city}
               onChange={handleChange}
               placeholder="Enter city"
-              className="border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
           {/* Property Type */}
           <div className="flex flex-col w-full md:w-1/5">
-            <label className="text-sm font-medium mb-1 text-gray-700">
+            {/* <label className="text-sm font-medium mb-1 text-gray-700">
               Property Type
-            </label>
+            </label> */}
             <select
               name="propertyType"
               value={formData.propertyType}
               onChange={handleChange}
-              className="border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="">Select</option>
+              <option value="">Select Property Type</option>
               <option>Apartment</option>
               <option>Villa</option>
               <option>Townhouse</option>
@@ -125,16 +125,16 @@ const PropertySearchForm = () => {
 
           {/* Bedroom */}
           <div className="flex flex-col w-full md:w-1/5">
-            <label className="text-sm font-medium mb-1 text-gray-700">
+            {/* <label className="text-sm font-medium mb-1 text-gray-700">
               Bedroom
-            </label>
+            </label> */}
             <select
               name="bedroom"
               value={formData.bedroom}
               onChange={handleChange}
-              className="border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="">Select</option>
+              <option value="">Select Bedroom</option>
               <option>1</option>
               <option>2</option>
               <option>3+</option>
@@ -143,31 +143,31 @@ const PropertySearchForm = () => {
 
           {/* Property Size */}
           <div className="flex flex-col w-full md:w-1/5">
-            <label className="text-sm font-medium mb-1 text-gray-700">
+            {/* <label className="text-sm font-medium mb-1 text-gray-700">
               Size (sqft)
-            </label>
+            </label> */}
             <input
               type="number"
               name="size"
               value={formData.size}
               onChange={handleChange}
-              placeholder="e.g. 1000"
-              className="border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Size e.g. 1000"
+              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
           {/* Price */}
           <div className="flex flex-col w-full md:w-1/5">
-            <label className="text-sm font-medium mb-1 text-gray-700">
+            {/* <label className="text-sm font-medium mb-1 text-gray-700">
               Price
-            </label>
+            </label> */}
             <select
               name="price"
               value={formData.price}
               onChange={handleChange}
-              className="border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="">Select</option>
+              <option value="">Select Price</option>
               <option>Below 1M</option>
               <option>1M - 2M</option>
               <option>2M+</option>
