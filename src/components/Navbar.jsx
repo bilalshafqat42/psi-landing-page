@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltRight, FaRegHeart } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +10,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Left: Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold text-blue-700">
-              MyLogo
-            </a>
+            <a href="#" className="text-2xl font-bold text-[#01062d] hover:text-[#faa300]">
+Bilal Logo            </a>
           </div>
 
           {/* Center: Desktop Menu */}
@@ -50,11 +49,14 @@ const Navbar = () => {
           </div>
 
           {/* Right: Desktop Button */}
-          <div className="hidden md:flex">
-            <button className="bg-[#faa300] text-[#000] px-4 py-2 rounded-3xl hover:bg-[#01062d] hover:text-[#faa300] transition">
+          <div className="hidden md:flex gap-2">
+            <button className="bg-[#faa300] font-semibold text-[#000] px-4 py-2 rounded-3xl hover:bg-[#01062d] hover:text-[#faa300] transition">
               <span className="flex justify-center items-center gap-2">
-                Consultation <FaLongArrowAltRight />
+                CONSULTATION <FaLongArrowAltRight />
               </span>
+            </button>
+            <button className="bg-[#f4f5f8] font-semibold text-[#faa300] px-4 py-2 rounded-xl hover:bg-[#01062d] hover:text-[#faa300] transition">
+              <FaRegHeart />
             </button>
           </div>
 

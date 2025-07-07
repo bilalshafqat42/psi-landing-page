@@ -34,7 +34,7 @@ const PropertySearchForm = () => {
   return (
     <div
       className="w-full max-w-7xl mx-auto p-6 rounded-2xl
-      bg-white/10 backdrop-blur-md border border-white/20 shadow-lg"
+      bg-white/10 backdrop-blur-md border border-white/20 shadow-lg mb-10"
     >
       {/* Toggle + Reset Button Row */}
       <div className="flex justify-between md:justify-start items-center mb-6 gap-4 flex-wrap">
