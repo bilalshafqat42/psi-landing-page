@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,30 +15,50 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Center: Menu (hidden on mobile) */}
+          {/* Center: Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            <a href="#" className="text-gray-700 hover:text-blue-700">
-              Home
+            <a
+              href="#"
+              className="font-semibold text-[#01062d] hover:text-[#faa300] font-bold"
+            >
+              RENT/BUY
             </a>
-            <a href="#" className="text-gray-700 hover:text-blue-700">
-              About
+            <a
+              href="#"
+              className="font-semibold text-[#01062d] hover:text-[#faa300] font-bold"
+            >
+              AREA
             </a>
-            <a href="#" className="text-gray-700 hover:text-blue-700">
-              Services
+            <a
+              href="#"
+              className="font-semibold text-[#01062d] hover:text-[#faa300] font-bold"
+            >
+              PROJECT
             </a>
-            <a href="#" className="text-gray-700 hover:text-blue-700">
-              Contact
+            <a
+              href="#"
+              className="font-semibold text-[#01062d] hover:text-[#faa300] font-bold"
+            >
+              DEVELOPER
+            </a>
+            <a
+              href="#"
+              className="font-semibold text-[#01062d] hover:text-[#faa300] font-bold"
+            >
+              LIST YOUR PROPERTY
             </a>
           </div>
 
-          {/* Right: Button */}
+          {/* Right: Desktop Button */}
           <div className="hidden md:flex">
-            <button className="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition">
-              Consultation
+            <button className="bg-[#faa300] text-[#000] px-4 py-2 rounded-3xl hover:bg-[#01062d] hover:text-[#faa300] transition">
+              <span className="flex justify-center items-center gap-2">
+                Consultation <FaLongArrowAltRight />
+              </span>
             </button>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile Menu Toggle */}
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -48,6 +69,7 @@ const Navbar = () => {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 {isOpen ? (
                   <path
@@ -70,26 +92,33 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu dropdown */}
-      {isOpen && (
-        <div className="md:hidden px-4 pb-4">
-          <a href="#" className="block text-gray-700 py-2">
-            Home
-          </a>
-          <a href="#" className="block text-gray-700 py-2">
-            About
-          </a>
-          <a href="#" className="block text-gray-700 py-2">
-            Services
-          </a>
-          <a href="#" className="block text-gray-700 py-2">
-            Contact
-          </a>
-          <button className="w-full mt-2 bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition">
-            Consultation
-          </button>
-        </div>
-      )}
+      {/* Animated Mobile Menu */}
+      <div
+        className={`md:hidden px-4 overflow-hidden transform transition-all duration-300 ease-in-out ${
+          isOpen
+            ? "translate-y-0 opacity-100 max-h-[500px]"
+            : "-translate-y-4 opacity-0 max-h-0 pointer-events-none"
+        }`}
+      >
+        <a href="#" className="block  poppins-bold text-gray-700 py-2">
+          RENT/BUY
+        </a>
+        <a href="#" className="block font-bold text-gray-700 py-2">
+          AREA
+        </a>
+        <a href="#" className="block text-gray-700 py-2">
+          PROJECT
+        </a>
+        <a href="#" className="block text-gray-700 py-2">
+          DEVELOPER
+        </a>
+        <a href="#" className="block text-gray-700 py-2">
+          LIST YOUR PROPERTY
+        </a>
+        <button className="w-full mt-2 bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition">
+          Consultation
+        </button>
+      </div>
     </nav>
   );
 };

@@ -9,7 +9,7 @@ const FlagDropdown = () => {
     <div className="relative inline-block text-left">
       <div
         onClick={() => setOpen(!open)}
-        className="flex items-center cursor-pointer border px-4 py-2 rounded-lg bg-white shadow-md"
+        className="flex items-center cursor-pointer px-4 py-2 text-white text-[14px] shadow-md"
       >
         <img src={selected.flag} alt={selected.name} className="w-5 h-5 mr-2" />
         <span>{selected.name}</span>
