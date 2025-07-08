@@ -32,11 +32,8 @@ const projects = [
 
 const OffPlanProject = () => {
   return (
-    <div className="max-w-7xl mx-auto py-6 px-4">
+    <div className="max-w-7xl bg-[#f6f6f6] mx-auto py-6 px-4">
       {/* Section Title */}
-      <h2 className="text-4xl font-bold text-[#01062d] mb-8 text-left border-[#faa300] border-l-4 pl-4">
-        OFF-PLAN PROJECTS
-      </h2>
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
@@ -48,14 +45,17 @@ const OffPlanProject = () => {
           <SwiperSlide key={index}>
             <div>
               {/* Project Name */}
-              <h4 className="text-2xl font-bold mb-4 text-center">
+              <h4 className="text-3xl font-bold mb-4 uppercase text-center">
                 {project.title}
               </h4>
 
               {/* Villa Types */}
               <div className="flex flex-col sm:flex-row justify-center gap-6 mb-10">
                 {project.villaTypes.map((type, idx) => (
-                  <h4 key={idx} className="text-xl font-bold text-center">
+                  <h4
+                    key={idx}
+                    className="text-xl font-semibold uppercase text-center"
+                  >
                     {type}
                   </h4>
                 ))}
