@@ -9,22 +9,6 @@ import slides from "../constants/slides";
 import PropertySearchForm from "./PropertySearchForm";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-// List of slides with different background images and titles
-// const slides = [
-//   {
-//     image: "/hero-banner.jpg",
-//     title: "DISCOVER YOUR MOST COMFORT PLACE FOR YOUR FUTURE LIFE",
-//   },
-//   {
-//     image: "/hero-banner-2.jpg",
-//     title: "FIND YOUR PERFECT HOME IN DUBAI’S BEST COMMUNITIES",
-//   },
-//   {
-//     image: "/hero-banner-3.jpg",
-//     title: "INVEST SMARTLY IN UAE REAL ESTATE MARKET",
-//   },
-// ];
-
 const HeroBanner = () => {
   return (
     <section className="w-full">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { SlReload } from "react-icons/sl";
 
 const PropertySearchForm = () => {
   const [type, setType] = useState("rent");
@@ -67,29 +68,16 @@ const PropertySearchForm = () => {
         <button
           type="button"
           onClick={handleReset}
-          className="flex items-center gap-1 border border-gray-300 text-gray-700 text-sm px-3 py-1.5 rounded-full hover:bg-gray-100 transition"
+          className="flex items-center gap-1 underline border-0 text-[#fff] text-sm px-3 py-1.5 hover:text-[#01062d] transition"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-4 h-4"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4 4v5h.582M20 20v-5h-.581m-1.41-5A7.5 7.5 0 004.582 9m0 0H9m-4.418 0A7.5 7.5 0 0119.418 15"
-            />
-          </svg>
+          <SlReload />
           Reset
         </button>
       </div>
 
       {/* Form */}
       <form onSubmit={handleSubmit} className="w-full">
-        <div className="flex flex-col md:flex-row gap-4 md:items-end">
+        <div className="flex flex-col md:flex-row gap-2 md:items-end">
           {/* City Input */}
           <div className="flex flex-col w-full md:w-1/5">
             {/* <label className="bg-white text-sm font-medium mb-1 text-gray-700">
@@ -101,7 +89,7 @@ const PropertySearchForm = () => {
               value={formData.city}
               onChange={handleChange}
               placeholder="Enter city"
-              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-12"
             />
           </div>
 
@@ -114,7 +102,7 @@ const PropertySearchForm = () => {
               name="propertyType"
               value={formData.propertyType}
               onChange={handleChange}
-              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-12"
             >
               <option value="">Select Property Type</option>
               <option>Apartment</option>
@@ -132,7 +120,7 @@ const PropertySearchForm = () => {
               name="bedroom"
               value={formData.bedroom}
               onChange={handleChange}
-              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-12"
             >
               <option value="">Select Bedroom</option>
               <option>1</option>
@@ -152,7 +140,7 @@ const PropertySearchForm = () => {
               value={formData.size}
               onChange={handleChange}
               placeholder="Size e.g. 1000"
-              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-12"
             />
           </div>
 
@@ -165,7 +153,7 @@ const PropertySearchForm = () => {
               name="price"
               value={formData.price}
               onChange={handleChange}
-              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-12"
             >
               <option value="">Select Price</option>
               <option>Below 1M</option>
@@ -178,7 +166,7 @@ const PropertySearchForm = () => {
           <div className="flex flex-col w-full md:w-auto">
             <button
               type="submit"
-              className="mt-4 md:mt-0 bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition"
+              className="h-12 mt-4 md:mt-0 bg-[#faa300] text-[#01062d] text-white px-6 py-2 rounded-3xl hover:bg-[#01062d] hover:text-[#faa300] transition"
             >
               Search
             </button>

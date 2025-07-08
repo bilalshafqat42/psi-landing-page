@@ -32,10 +32,11 @@ const projects = [
 
 const OffPlanProject = () => {
   return (
-    <div className="max-w-7xl mx-auto py-12 px-4">
+    <div className="max-w-7xl mx-auto py-6 px-4">
       {/* Section Title */}
-      <h2 className="text-3xl font-bold mb-8 text-center">Off Plan Projects</h2>
-
+      <h2 className="text-4xl font-bold text-[#01062d] mb-8 text-left border-[#faa300] border-l-4 pl-4">
+        OFF-PLAN PROJECTS
+      </h2>
       <Swiper
         modules={[Navigation, Pagination]}
         navigation

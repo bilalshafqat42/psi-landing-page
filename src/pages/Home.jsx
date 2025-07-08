@@ -17,7 +17,7 @@ const Home = () => {
         </div>
       </section>
       {/* off plan projects  */}
-      <section className="py-12 px-4 bg-gray-50">
+      <section className="py-6 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <OffPlanProject />
         </div>

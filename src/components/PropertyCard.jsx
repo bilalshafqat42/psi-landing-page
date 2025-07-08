@@ -4,15 +4,13 @@ import {
   FaBath,
   FaRulerCombined,
   FaWhatsapp,
-  FaPhoneAlt,
-  FaEnvelope,
   FaMapMarkerAlt,
-  FaHeart,
+  FaRegHeart,
 } from "react-icons/fa";
 
 const PropertyCard = ({ property }) => {
   return (
-    <div className="border rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all">
+    <div className="bg-white border border-[#d2d2d2] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all">
       <div className="relative">
         {/* Property Image */}
         <img
@@ -22,16 +20,16 @@ const PropertyCard = ({ property }) => {
         />
 
         {/* For Sale Tag - Top Left */}
-        <span className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded">
+        <span className="absolute top-3 left-3 bg-[#faa300] text-white text-xs font-semibold px-2 py-1 rounded">
           For Sale
         </span>
 
         {/* Heart Icon - Top Right */}
         <button
           onClick={() => console.log("Liked!")}
-          className="absolute top-3 right-3 bg-white p-1 rounded-full shadow hover:bg-red-100 transition"
+          className="absolute top-3 right-3 bg-[#01062d] p-1 rounded-full shadow hover:bg-red-100 transition"
         >
-          <FaHeart className="text-red-500" />
+          <FaRegHeart className="text-[#faa300]" />
         </button>
 
         {/* Price Tag - Bottom Left */}
@@ -42,26 +40,28 @@ const PropertyCard = ({ property }) => {
 
       <div className="p-4">
         {/* Heading */}
-        <h2 className="text-lg font-semibold mb-1">{property.propertyName}</h2>
+        <h2 className="text-[#01062d] text-lg font-semibold mb-1 uppercase">
+          {property.propertyName}
+        </h2>
 
         {/* Location */}
-        <div className="flex items-center text-gray-500 text-sm mb-3">
-          <FaMapMarkerAlt className="mr-1 text-blue-500" />
+        <div className="flex items-center text-[#7e7b7b] text-base mb-3 font-medium">
+          <FaMapMarkerAlt className="mr-1 text-[#faa300]" />
           {property.propertyLocation}
         </div>
 
         {/* Bed | Bath | Size */}
-        <div className="grid grid-cols-3 text-sm text-gray-600 mb-4">
-          <div className="flex items-center gap-1">
-            <FaBed className="text-blue-500" />
+        <div className="grid grid-cols-3 text-base font-semibold text-[#01062d] mb-4">
+          <div className="flex items-center gap-2">
+            <FaBed className="text-[#faa300]" />
             {property.propertyBed} Bed
           </div>
-          <div className="flex items-center gap-1">
-            <FaBath className="text-blue-500" />
+          <div className="flex items-center gap-2">
+            <FaBath className="text-[#faa300]" />
             {property.propertyBath} Bath
           </div>
-          <div className="flex items-center gap-1">
-            <FaRulerCombined className="text-blue-500" />
+          <div className="flex items-center gap-2">
+            <FaRulerCombined className="text-[#faa300]" />
             {property.propertySize}
           </div>
         </div>
@@ -72,26 +72,26 @@ const PropertyCard = ({ property }) => {
             href={property.whatsappButton}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-center items-center gap-1 bg-green-500 text-white px-2 py-1 rounded text-sm"
+            className="flex justify-center items-center gap-1 bg-white border border-[#01062d] text-[#01062d] px-2 py-1 rounded text-lg h-8"
           >
-            <FaWhatsapp /> WhatsApp
+            <FaWhatsapp />
           </a>
           <a
             href={property.callButton}
-            className="flex justify-center items-center gap-1 bg-blue-500 text-white px-2 py-1 rounded text-sm"
+            className="flex justify-center items-center gap-1 bg-white border border-[#01062d] text-[#01062d] font-medium px-2 py-1 rounded text-base h-8"
           >
-            <FaPhoneAlt /> Call
+            Call
           </a>
           <a
             href={property.emailButton}
-            className="flex justify-center items-center gap-1 bg-purple-500 text-white px-2 py-1 rounded text-sm"
+            className="flex justify-center items-center gap-1 bg-white border border-[#01062d] text-[#01062d] font-medium px-2 py-1 rounded text-base h-8"
           >
-            <FaEnvelope /> Email
+            Email
           </a>
         </div>
 
         {/* Divider */}
-        <hr className="my-4" />
+        <hr className="my-4 text-[#d2d2d2]" />
 
         {/* Agent Info + Details */}
         <div className="flex items-center justify-between">
@@ -105,7 +105,7 @@ const PropertyCard = ({ property }) => {
           </div>
           <a
             href={property.propertyDetailsButton}
-            className="text-white bg-gray-800 hover:bg-gray-700 px-3 py-1 rounded text-sm"
+            className="rounded-full text-base text-[#faa300] bg-white border border-[#faa300] hover:bg-[#faa300] hover:text-white px-3 py-1"
           >
             Details
           </a>
