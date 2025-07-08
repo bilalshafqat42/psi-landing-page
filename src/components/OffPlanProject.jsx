@@ -46,7 +46,7 @@ const OffPlanProject = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="max-w-7xl mx-auto py-6 px-4 relative">
+    <div className="max-w-7xl mx-auto py-6 px-0 relative md:px-4">
       {/* Navigation Buttons */}
       <div className="absolute top-15 left-0 z-20 flex justify-between w-full px-4 pointer-events-none">
         <button

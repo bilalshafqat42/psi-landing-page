@@ -1,24 +1,63 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
-import slides from "../constants/slides";
 
+import slides from "../constants/slides";
 import PropertySearchForm from "./PropertySearchForm";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const HeroBanner = () => {
   return (
-    <section className="w-full">
+    <section className="w-full relative">
+      {/* Custom Navigation Buttons */}
+      <div className="hidden md:block">
+        <div className="absolute top-1/2 left-4 z-20 transform -translate-y-1/2">
+          <button className="hero-prev bg-white/10 backdrop-blur-md border border-white/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+        </div>
+        <div className="absolute top-1/2 right-4 z-20 transform -translate-y-1/2">
+          <button className="hero-next bg-white/10 backdrop-blur-md border border-white/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
       <Swiper
-        modules={[Navigation, Pagination]}
-        navigation
-        pagination={{ clickable: true }}
-        spaceBetween={0}
-        slidesPerView={1}
+        modules={[Navigation]}
+        navigation={{
+          nextEl: ".hero-next",
+          prevEl: ".hero-prev",
+        }}
         loop
+        slidesPerView={1}
+        spaceBetween={0}
         className="w-full"
       >
         {slides.map((slide, index) => (
@@ -39,28 +78,28 @@ const HeroBanner = () => {
                       {slide.title}
                     </h1>
 
-                    {/* Glassmorphism Stats */}
+                    {/* Stats Box (only on desktop) */}
                     <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 text-center my-4 py-4 w-full rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg max-w-4xl h-30">
-                      <div className="flex flex-row justify-center items-center px-4 py-px w-full text-center gap-4">
+                      <div className="flex flex-row justify-center items-center px-4 gap-4">
                         <p className="font-bold text-lg md:text-4xl text-white drop-shadow-sm uppercase">
                           5+
                         </p>
-                        <p className="text-white drop-shadow-sm text-l text-left font-medium leading-tight">
+                        <p className="text-white drop-shadow-sm text-left font-medium leading-tight">
                           POPULAR
                           <br />
                           AREAS
                         </p>
                       </div>
-                      <div className="flex flex-row justify-center items-center px-4 py-px w-full text-center border-l-2 border-white/30 gap-4">
-                        <p className="text-white drop-shadow-sm text-l text-left font-medium leading-tight">
+                      <div className="flex flex-row justify-center items-center px-4 border-l-2 border-white/30 gap-4">
+                        <p className="text-white text-left font-medium leading-tight">
                           PROJECTS
                         </p>
                         <p className="font-bold text-lg md:text-4xl text-white drop-shadow-sm uppercase">
                           11+
                         </p>
                       </div>
-                      <div className="flex flex-row justify-center items-center px-4 py-px w-full text-center col-span-2 lg:col-span-1 lg:border-l-2 border-white/30 gap-4">
-                        <p className="text-white drop-shadow-sm text-l text-left font-medium leading-tight">
+                      <div className="flex flex-row justify-center items-center px-4 col-span-2 lg:col-span-1 lg:border-l-2 border-white/30 gap-4">
+                        <p className="text-white text-left font-medium leading-tight">
                           YEARS
                           <br />
                           EXPERIENCE
@@ -72,8 +111,8 @@ const HeroBanner = () => {
                     </div>
                   </div>
 
-                  {/* Button */}
-                  <div className="ml-auto mr-auto float-none md:flex-shrink-0">
+                  {/* CTA Button */}
+                  <div className="ml-auto mr-auto md:ml-0 md:mr-0 md:flex-shrink-0">
                     <button className="bg-[#faa300] font-semibold text-white px-4 py-2 rounded-3xl hover:bg-[#01062d] hover:text-[#faa300] transition">
                       <span className="flex justify-center items-center gap-2">
                         ALL PROJECTS <FaLongArrowAltRight />
@@ -82,7 +121,7 @@ const HeroBanner = () => {
                   </div>
                 </div>
 
-                {/* Bottom Form */}
+                {/* Search Form at Bottom */}
                 <div>
                   <PropertySearchForm />
                 </div>
