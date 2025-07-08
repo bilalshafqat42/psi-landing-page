@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 import sampleImage from "../assets/home.jpg"; // Replace with your actual image
 
@@ -16,35 +15,99 @@ const projects = [
       "5 BHK VILLA + MAID'S",
       "6 BHK VILLA + MAID'S",
     ],
-    heading: "Live in Nature, Steps from the Coast",
+    heading:
+      "Explore The Adventure Park, Stroll Across The Stunning Eco-corniche, Soak in Unparalleled Cultural Experiences - in A Choice Of 4 To 6-bed Villas Surrounded By Over 900,000m2 Of Protected Wilderness.",
     description:
       "Saadiyat Lagoons offers a lifestyle like no other. Nestled among mangroves and white-sand beaches, these villas offer luxury, space, and serenity for families looking to invest in Abu Dhabi’s most exclusive natural community.",
+    startingPrice: "AED 6,200,000",
+    numberOfBedrooms: "4, 5, 6",
+    areaSizeFrom: "4,960 SQ. FT",
   },
   {
-    title: "Another Project",
+    title: "Saadiyat Lagoons",
     image: sampleImage,
-    villaTypes: ["3 BHK VILLA", "4 BHK TOWNHOUSE"],
-    heading: "Modern Living with Timeless Views",
+    villaTypes: [
+      "4 BHK VILLA + MAID'S",
+      "5 BHK VILLA + MAID'S",
+      "6 BHK VILLA + MAID'S",
+    ],
+    heading:
+      "Explore The Adventure Park, Stroll Across The Stunning Eco-corniche, Soak in Unparalleled Cultural Experiences - in A Choice Of 4 To 6-bed Villas Surrounded By Over 900,000m2 Of Protected Wilderness.",
     description:
-      "This new project offers sleek, contemporary living near key landmarks and lifestyle amenities. Perfect for growing families and long-term investors.",
+      "Saadiyat Lagoons offers a lifestyle like no other. Nestled among mangroves and white-sand beaches, these villas offer luxury, space, and serenity for families looking to invest in Abu Dhabi’s most exclusive natural community.",
+    startingPrice: "AED 6,200,000",
+    numberOfBedrooms: "4, 5, 6",
+    areaSizeFrom: "4,960 SQ. FT",
   },
 ];
 
 const OffPlanProject = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
   return (
-    <div className="max-w-7xl bg-[#f6f6f6] mx-auto py-6 px-4">
-      {/* Section Title */}
+    <div className="max-w-7xl mx-auto py-6 px-4 relative">
+      {/* Navigation Buttons */}
+      <div className="absolute top-15 left-0 z-20 flex justify-between w-full px-4 pointer-events-none">
+        <button
+          ref={prevRef}
+          className="pointer-events-auto w-12 h-12 border border-gray-400 rounded bg-[#d6d6d6] text-gray-600 flex items-center justify-center shadow-sm"
+        >
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button
+          ref={nextRef}
+          className="pointer-events-auto w-12 h-12 border border-gray-400 rounded bg-[#d6d6d6] text-gray-600 flex items-center justify-center shadow-sm"
+        >
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* Swiper */}
       <Swiper
-        modules={[Navigation, Pagination]}
-        navigation
-        pagination={{ clickable: true }}
+        modules={[Navigation]}
         spaceBetween={30}
         slidesPerView={1}
+        loop={true}
+        navigation={{
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
+        }}
+        onBeforeInit={(swiper) => {
+          if (typeof swiper.params.navigation !== "boolean") {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+          }
+        }}
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div>
-              {/* Project Name */}
+            <div className="relative rounded-lg shadow px-4 py-6">
+              {/* Project Heading */}
               <h4 className="text-3xl font-bold mb-4 uppercase text-center">
                 {project.title}
               </h4>
@@ -62,22 +125,51 @@ const OffPlanProject = () => {
               </div>
 
               {/* Content + Image */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="flex flex-col md:flex-row items-stretch rounded-lg overflow-hidden min-h-[400px] bg-white">
                 {/* Left Content */}
-                <div>
-                  <h3 className="text-2xl font-bold mb-4">{project.heading}</h3>
-                  <p className="text-gray-600 mb-6">{project.description}</p>
-                  <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
-                    Explore More
+                <div className="p-6 flex-1 flex flex-col justify-between bg-white h-full">
+                  <h3 className="text-base font-medium mb-4">
+                    {project.heading}
+                  </h3>
+
+                  <p className="text-gray-600 mb-4">
+                    <span className="font-bold text-black">
+                      Starting Prices:{" "}
+                    </span>
+                    <span className="text-[#faa300]">
+                      {project.startingPrice}
+                    </span>
+                  </p>
+
+                  <p className="text-gray-600 mb-4">
+                    <span className="font-bold text-black">
+                      Number of Bedrooms:{" "}
+                    </span>
+                    <span className="text-[#faa300]">
+                      {project.numberOfBedrooms}
+                    </span>
+                  </p>
+
+                  <p className="text-gray-600 mb-4">
+                    <span className="font-bold text-black">
+                      Area Size From:{" "}
+                    </span>
+                    <span className="text-[#faa300]">
+                      {project.areaSizeFrom}
+                    </span>
+                  </p>
+
+                  <button className="w-60 h-12 mt-4 md:mt-0 bg-[#faa300] text-[#01062d] text-white px-6 py-2 rounded-3xl hover:bg-[#01062d] hover:text-[#faa300] transition">
+                    Book Your Property
                   </button>
                 </div>
 
                 {/* Right Image */}
-                <div>
+                <div className="flex-1 h-full">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover rounded-lg shadow"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
