@@ -10,8 +10,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Left: Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold text-[#01062d] hover:text-[#faa300]">
-Bilal Logo            </a>
+            <a
+              href="#"
+              className="text-2xl font-bold text-[#01062d] hover:text-[#faa300]"
+            >
+              Bilal Logo{" "}
+            </a>
           </div>
 
           {/* Center: Desktop Menu */}
@@ -102,23 +106,25 @@ Bilal Logo            </a>
             : "-translate-y-4 opacity-0 max-h-0 pointer-events-none"
         }`}
       >
-        <a href="#" className="block  poppins-bold text-gray-700 py-2">
+        <a href="#" className="block font-medium text-[#01062d] py-2">
           RENT/BUY
         </a>
-        <a href="#" className="block font-bold text-gray-700 py-2">
+        <a href="#" className="block font-medium text-[#01062d] py-2">
           AREA
         </a>
-        <a href="#" className="block text-gray-700 py-2">
+        <a href="#" className="block font-medium text-[#01062d] py-2">
           PROJECT
         </a>
-        <a href="#" className="block text-gray-700 py-2">
+        <a href="#" className="block font-medium text-[#01062d] py-2">
           DEVELOPER
         </a>
-        <a href="#" className="block text-gray-700 py-2">
+        <a href="#" className="block font-medium text-[#01062d] py-2">
           LIST YOUR PROPERTY
         </a>
-        <button className="w-full mt-2 bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition">
-          Consultation
+        <button className="bg-[#faa300] font-semibold text-[#000] px-4 py-2 rounded-3xl hover:bg-[#01062d] hover:text-[#faa300] transition mb-5">
+          <span className="flex justify-center items-center gap-2">
+            CONSULTATION <FaLongArrowAltRight />
+          </span>
         </button>
       </div>
     </nav>

@@ -35,12 +35,12 @@ const HeroBanner = () => {
                 {/* Heading Row */}
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end w-full gap-6">
                   <div className="text-left max-w-4xl w-full mt-8">
-                    <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+                    <h1 className="text-center md:text-left text-3xl md:text-5xl font-bold text-white leading-tight">
                       {slide.title}
                     </h1>
 
                     {/* Glassmorphism Stats */}
-                    <div className="grid grid-cols-2 lg:grid-cols-3 text-center my-4 py-4 w-full rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg max-w-4xl h-30">
+                    <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 text-center my-4 py-4 w-full rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg max-w-4xl h-30">
                       <div className="flex flex-row justify-center items-center px-4 py-px w-full text-center gap-4">
                         <p className="font-bold text-lg md:text-4xl text-white drop-shadow-sm uppercase">
                           5+
@@ -73,7 +73,7 @@ const HeroBanner = () => {
                   </div>
 
                   {/* Button */}
-                  <div className="flex-shrink-0">
+                  <div className="ml-auto mr-auto float-none md:flex-shrink-0">
                     <button className="bg-[#faa300] font-semibold text-white px-4 py-2 rounded-3xl hover:bg-[#01062d] hover:text-[#faa300] transition">
                       <span className="flex justify-center items-center gap-2">
                         ALL PROJECTS <FaLongArrowAltRight />
