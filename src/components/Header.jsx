@@ -5,7 +5,7 @@ import TopBar from "./TopBar";
 const Header = () => {
   return (
     <header>
-      <TopBar />
+      {/* <TopBar /> */}
       <Navbar />
     </header>
   );

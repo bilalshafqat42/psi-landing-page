@@ -1,13 +1,12 @@
+// src/App.js
 import React from "react";
-import "./App.css";
-import Home from "./pages/Home";
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Home />
-    </>
+    <div className="min-h-screen bg-white text-black flex items-center justify-center">
+      <h1 className="text-3xl font-semibold">Hello, World!</h1>
+    </div>
   );
-};
+}
 
 export default App;
