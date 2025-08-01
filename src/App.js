@@ -1,16 +1,12 @@
 import React from "react";
-import Header from "./components/Header";
-import HeroBanner from "./components/HeroBanner";
-import AboutSection from "./components/About";
+import Home from "./pages/Home";
 
-function App() {
+const App = () => {
   return (
     <>
-      <Header />
-      <HeroBanner />
-      <AboutSection />
+      <Home />
     </>
   );
-}
+};
 
 export default App;

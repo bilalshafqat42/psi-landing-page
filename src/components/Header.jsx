@@ -14,28 +14,25 @@ const Header = () => {
         {/* Nav */}
         <nav className="hidden lg:flex space-x-8 text-sm font-medium">
           <a href="#buy" className="hover:text-blue-600 transition">
-            Buy
+            BUY
           </a>
           <a href="#rent" className="hover:text-blue-600 transition">
-            Rent
+            RENT
           </a>
           <a href="#projects" className="hover:text-blue-600 transition">
-            Projects
+            PROJECTS
           </a>
           <a href="#developers" className="hover:text-blue-600 transition">
-            Developers
+            DEVELOPERS
           </a>
           <a href="#areas" className="hover:text-blue-600 transition">
-            Areas
+            AREAS
           </a>
           <a href="#services" className="hover:text-blue-600 transition">
-            Services
+            SERVICES
           </a>
           <a href="#blogs" className="hover:text-blue-600 transition">
-            Blogs
-          </a>
-          <a href="#more" className="hover:text-blue-600 transition">
-            More
+            BLOGS
           </a>
         </nav>
 
