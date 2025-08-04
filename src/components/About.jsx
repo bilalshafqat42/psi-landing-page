@@ -21,23 +21,14 @@ const AboutSection = () => {
       description:
         "I initiate the web application development process by strategically.",
     },
-    // {
-    //   icon: <FiMonitor className="text-3xl text-gray-800 mx-auto" />,
-    //   title: "04 DEVELOPMENT PHASE",
-    //   description:
-    //     "I initiate the web application development process by strategically.",
-    // },
   ];
 
   return (
     <section className="px-6 py-20 max-w-[1440px] mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 text-center md:text-left">
-        {/* Column 1: Logo + About (40%) with right border on desktop */}
+      {/* Features Row */}
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 text-center md:text-left mb-20">
         <div className="lg:col-span-2 lg:border-r lg:pr-8 flex flex-col items-center md:items-start space-y-4">
-          <img src="/logo.svg" alt="Logo" className="w-20 h-auto" />
-          <h2 className="text-2xl font-extrabold text-gray-900 leading-snug">
-            About Building
-          </h2>
+          <img src="/passo-dark.png" alt="Logo" className="w-50 h-auto" />
           <p className="text-gray-600 text-sm leading-relaxed">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -45,7 +36,6 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Columns 2–4: Features (20% each) with left padding on desktop */}
         {features.map((feature, index) => (
           <div
             key={index}
@@ -60,6 +50,34 @@ const AboutSection = () => {
             </p>
           </div>
         ))}
+      </div>
+
+      {/* Image + Text Row */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        {/* Left: Image */}
+        <div className="w-full aspect-video rounded-lg overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+            alt="Illustration"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Right: Text */}
+        <div className="text-center md:text-left">
+          <h3 className="text-3xl font-bold mb-4">Vision Behind the Process</h3>
+          <p className="text-gray-700 text-sm leading-relaxed mb-4">
+            Our approach blends creativity, strategy, and technical precision to
+            deliver top-tier web applications. We focus on scalable, user-first
+            experiences from the first sketch to final deployment. We focus on scalable, user-first
+            experiences from the first sketch to final deployment.
+          </p>
+          <p className="text-gray-700 text-sm leading-relaxed">
+            Our approach blends creativity, strategy, and technical precision to
+            deliver top-tier web applications. We focus on scalable, user-first
+            experiences from the first sketch to final deployment.
+          </p>
+        </div>
       </div>
     </section>
   );
