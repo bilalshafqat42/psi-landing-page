@@ -7,6 +7,7 @@ import GallerySection from "../components/GalelrySection";
 import AmenitiesSection from "../components/AmenitiesSection";
 import Location from "../components/Location";
 import DownloadBrochure from "../components/DownloadBrochure";
+import FormSection from "../components/FormSection";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <DownloadBrochure />
       <AmenitiesSection />
       <Location />
+      <FormSection />
       <Footer />
     </>
   );
