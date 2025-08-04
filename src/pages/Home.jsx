@@ -5,6 +5,7 @@ import About from "../components/About";
 import Footer from "../components/Footer";
 import GallerySection from "../components/GalelrySection";
 import AmenitiesSection from "../components/AmenitiesSection";
+import Location from "../components/Location";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <About />
       <GallerySection />
       <AmenitiesSection />
+      <Location />
       <Footer />
     </>
   );
