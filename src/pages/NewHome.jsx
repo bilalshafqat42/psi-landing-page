@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
 
 const NewHome = () => {
   return (
-    <div>NewHome</div>
-  )
-}
+    <>
+      <Header />
+      <HeroSection />
+    </>
+  );
+};
 
-export default NewHome
+export default NewHome;

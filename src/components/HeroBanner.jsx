@@ -3,13 +3,12 @@ import React from "react";
 const Hero = () => {
   return (
     <section
-      className="relative h-screen bg-cover bg-center text-white font-sans"
+      className="relative h-screen lg:h-[80vh] bg-cover bg-center text-white font-sans"
       style={{ backgroundImage: "url('/hero-banner.jpg')" }}
-      // style={{ backgroundImage: "url('/hero.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/30"></div>
 
-      <div className="relative z-10 flex flex-col items-start justify-end h-full max-w-[1440px] mx-auto px-6 lg:px-14 pb-24">
+      <div className="relative z-10 flex flex-col items-start justify-end h-full w-full max-w-[1440px] mx-auto px-6 lg:px-0 pb-24">
         <h1 className="text-6xl sm:text-7xl lg:text-[70px] font-extrabold leading-tight mb-4 tracking-tight">
           ADDRESS BEACHFRONT
         </h1>

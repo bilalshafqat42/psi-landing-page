@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  FiLayout,
-  FiTrendingUp,
-  FiEdit3,
-  FiMonitor,
-  // FiCheckCircle,
-  // FiRefreshCcw,
-} from "react-icons/fi";
+import { FiLayout, FiTrendingUp, FiEdit3 } from "react-icons/fi";
 
 const AboutSection = () => {
   const features = [
@@ -28,50 +21,37 @@ const AboutSection = () => {
       description:
         "I initiate the web application development process by strategically.",
     },
-    {
-      icon: <FiMonitor className="text-3xl text-gray-800 mx-auto" />,
-      title: "04 DEVELOPMENT PHASE",
-      description:
-        "I initiate the web application development process by strategically.",
-    },
     // {
-    //   icon: <FiCheckCircle className="text-3xl text-gray-800 mx-auto" />,
-    //   title: "05 QUALITY ASSURANCE",
+    //   icon: <FiMonitor className="text-3xl text-gray-800 mx-auto" />,
+    //   title: "04 DEVELOPMENT PHASE",
     //   description:
-    //     "Quality assurance (QA) is a critical step in web app development as it guarantees the absence of bugs and ensures seamless functionality.",
-    // },
-    // {
-    //   icon: <FiRefreshCcw className="text-3xl text-gray-800 mx-auto" />,
-    //   title: "06 UPDATE & MAINTENANCE",
-    //   description:
-    //     "When it comes to updates and maintenance, I stay committed to your project even after its full development.",
+    //     "I initiate the web application development process by strategically.",
     // },
   ];
 
   return (
-    <section className="px-6 py-20 max-w-screen-xl mx-auto text-center">
-      <h2 className="text-4xl font-extrabold text-gray-900 mb-4 leading-snug max-w-3xl mx-auto">
-        About Building
-      </h2>
-      <p className="text-gray-600 mb-4 max-w-2xl mx-auto">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry.
-      </p>
-      <p className="text-gray-600 mb-14 max-w-2xl mx-auto">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s.
-      </p>
+    <section className="px-6 py-20 max-w-[1440px] mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 text-center md:text-left">
+        {/* Column 1: Logo + About (40%) with right border on desktop */}
+        <div className="lg:col-span-2 lg:border-r lg:pr-8 flex flex-col items-center md:items-start space-y-4">
+          <img src="/logo.svg" alt="Logo" className="w-20 h-auto" />
+          <h2 className="text-2xl font-extrabold text-gray-900 leading-snug">
+            About Building
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-left">
+        {/* Columns 2–4: Features (20% each) with left padding on desktop */}
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center space-y-3"
+            className="lg:col-span-1 lg:pl-8 flex flex-col items-center md:items-start space-y-3"
           >
-            <div>{feature.icon}</div>
+            <div className="text-3xl">{feature.icon}</div>
             <h4 className="font-bold text-gray-900 text-base uppercase">
               {feature.title}
             </h4>
