@@ -4,6 +4,7 @@ import HeroBanner from "../components/HeroBanner";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import GallerySection from "../components/GalelrySection";
+import AmenitiesSection from "../components/AmenitiesSection";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <HeroBanner />
       <About />
       <GallerySection />
+      <AmenitiesSection />
       <Footer />
     </>
   );
