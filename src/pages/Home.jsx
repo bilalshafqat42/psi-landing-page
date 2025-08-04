@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import GallerySection from "../components/GalelrySection";
 import AmenitiesSection from "../components/AmenitiesSection";
 import Location from "../components/Location";
+import DownloadBrochure from "../components/DownloadBrochure";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HeroBanner />
       <About />
       <GallerySection />
+      <DownloadBrochure />
       <AmenitiesSection />
       <Location />
       <Footer />
