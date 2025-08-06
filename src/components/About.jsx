@@ -24,7 +24,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="px-6 py-20 max-w-[1440px] mx-auto">
+    <section className="px-6 py-20 max-w-[1440px] mx-auto bg-[#f6f6f6]">
       {/* Features Row */}
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 text-center md:text-left mb-20">
         <div className="lg:col-span-2 lg:border-r lg:pr-8 flex flex-col items-center md:items-start space-y-4">

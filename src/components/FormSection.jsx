@@ -2,7 +2,7 @@ import React from "react";
 
 const FormSection = () => {
   return (
-    <section className="w-full px-4 py-12 md:py-16 lg:py-20 bg-white">
+    <section className="w-full px-4 py-12 md:py-16 lg:py-20 bg-[#f6f6f6]">
       <div className="max-w-screen-xl mx-auto flex flex-col gap-20 lg:flex-row justify-center items-center">
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
           <h2 className="text-4xl font-bold uppercase mb-6">
@@ -16,7 +16,7 @@ const FormSection = () => {
         </div>
 
         <div className="w-full lg:w-1/2">
-          <div className="rounded-3xl p-8 flex flex-col w-full">
+          <div className="rounded-3xl p-8 flex flex-col w-full border-2 border-[#081E35]/50">
             <form className="myForm">
               <div className="grid gap-4 mb-6 grid-cols-1 lg:grid-cols-2">
                 <input
