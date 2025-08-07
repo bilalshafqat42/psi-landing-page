@@ -9,12 +9,12 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/30"></div>
 
       <div className="relative z-10 flex flex-col items-start justify-end h-full w-full max-w-[1440px] mx-auto px-6 lg:px-0 pb-24">
-        <h1 className="text-6xl sm:text-7xl lg:text-[70px] font-extrabold leading-tight mb-4 tracking-tight">
+        <h1 className="font-heading tracking-wide text-6xl sm:text-7xl lg:text-[70px] font-extrabold leading-tight mb-4 tracking-tight">
           ADDRESS BEACHFRONT
         </h1>
-        <p className="text-xl font-medium mb-6">by Emaar Properties</p>
+        <p className="font-body text-xl font-medium mb-6">by Emaar Properties</p>
         <div className="flex space-x-4">
-          <button className="bg-[#E46027] hover:bg-[#E46027]/90 text-white font-semibold px-6 py-3 rounded">
+          <button className="tracking-wide font-body bg-[#E46027] hover:bg-[#E46027]/90 text-white font-semibold px-6 py-3 rounded">
             Download Brochure
           </button>
           {/* <button className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-6 py-3 rounded">
