@@ -6,50 +6,50 @@ const Header = () => {
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-0 h-20 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <span className="text-2xl font-bold tracking-tight">
+          <span className="text-2xl text-white font-bold tracking-tight">
             Bilal Shafqat
           </span>
         </div>
 
         {/* Nav */}
-        <nav className="hidden lg:flex space-x-8 text-sm font-medium">
-          <a href="/" className="hover:text-blue-600 transition">
+        <nav className="hidden lg:flex space-x-8 text-base text-white uppercase font-medium">
+          <a href="/" className="hover:font-bold transition">
             Home
           </a>
-          <a href="/home-2" className="hover:text-blue-600 transition">
+          <a href="/" className="hover:font-bold transition">
             Home 2
           </a>
-          <a href="#buy" className="hover:text-blue-600 transition">
+          <a href="/" className="hover:font-bold transition">
             BUY
           </a>
-          <a href="#rent" className="hover:text-blue-600 transition">
+          <a href="/" className="hover:font-bold transition">
             RENT
           </a>
-          <a href="#projects" className="hover:text-blue-600 transition">
+          <a href="/" className="hover:font-bold transition">
             PROJECTS
           </a>
-          <a href="#developers" className="hover:text-blue-600 transition">
+          <a href="/" className="hover:font-bold transition">
             DEVELOPERS
           </a>
-          <a href="#areas" className="hover:text-blue-600 transition">
+          <a href="/" className="hover:font-bold transition">
             AREAS
           </a>
-          <a href="#services" className="hover:text-blue-600 transition">
+          <a href="/" className="hover:font-bold transition">
             SERVICES
           </a>
-          <a href="#blogs" className="hover:text-blue-600 transition">
+          <a href="/" className="hover:font-bold transition">
             BLOGS
           </a>
         </nav>
 
-        <div className="hidden lg:flex items-center space-x-4 text-sm">
+        {/* <div className="hidden lg:flex items-center space-x-4 text-sm">
           <button className="border border-gray-400 px-4 py-2 rounded hover:bg-gray-100">
             Login
           </button>
           <button className="border border-black px-4 py-2 rounded hover:bg-black hover:text-white transition">
             List Your Property
           </button>
-        </div>
+        </div> */}
       </div>
     </header>
   );
