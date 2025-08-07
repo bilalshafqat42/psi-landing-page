@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/10 text-gray-900 font-sans border-b border-white/10">
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#101954]/40 text-gray-900 font-sans border-b border-white/10">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-0 h-20 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -12,13 +12,13 @@ const Header = () => {
         </div>
 
         {/* Nav */}
-        <nav className="hidden lg:flex space-x-8 text-base text-white uppercase font-medium">
-          <a href="/" className="hover:font-bold transition">
+        <nav className="hidden lg:flex space-x-12 text-base text-white uppercase font-medium">
+          {/* <a href="/" className="hover:font-bold transition">
             Home
           </a>
           <a href="/" className="hover:font-bold transition">
             Home 2
-          </a>
+          </a> */}
           <a href="/" className="hover:font-bold transition">
             BUY
           </a>

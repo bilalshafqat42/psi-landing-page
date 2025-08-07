@@ -14,12 +14,12 @@ const Hero = () => {
         </h1>
         <p className="text-xl font-medium mb-6">by Emaar Properties</p>
         <div className="flex space-x-4">
-          <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded">
+          <button className="bg-[#E46027] hover:bg-[#E46027]/90 text-white font-semibold px-6 py-3 rounded">
             Download Brochure
           </button>
-          <button className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-6 py-3 rounded">
+          {/* <button className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-6 py-3 rounded">
             Register Interest
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

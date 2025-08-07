@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import NewHome from "./pages/NewHome";
 import Notfound from "./components/Notfound";
 
+import "./App.css";
+
 const App = () => {
   return (
     <Routes>
