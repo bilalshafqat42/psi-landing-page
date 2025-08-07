@@ -1,15 +1,8 @@
-/* body {
-  font-family: "Poppins", sans-serif;
+:root {
+  --color-heading: #101954;
+  --color-paragraph: #333;
+  --color-button: #e46027;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-} */
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -19,8 +12,14 @@ h6 {
 
 .font-heading {
   font-family: "Montserrat", sans-serif;
+  /* color: var(--color-heading); */
 }
 
 .font-body {
   font-family: "Poppins", sans-serif;
+  /* color: var(--color-paragraph); */
+}
+.font-button {
+  font-family: "Poppins", sans-serif;
+  /* color: var(--color-button); */
 }

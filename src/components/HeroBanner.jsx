@@ -12,14 +12,13 @@ const Hero = () => {
         <h1 className="font-heading tracking-wide text-6xl sm:text-7xl lg:text-[70px] font-extrabold leading-tight mb-4 tracking-tight">
           ADDRESS BEACHFRONT
         </h1>
-        <p className="font-body text-xl font-medium mb-6">by Emaar Properties</p>
+        <p className="font-button text-xl font-medium mb-6">
+          by Emaar Properties
+        </p>
         <div className="flex space-x-4">
-          <button className="tracking-wide font-body bg-[#E46027] hover:bg-[#E46027]/90 text-white font-semibold px-6 py-3 rounded">
+          <button className="tracking-wide font-body bg-[#E46027] hover:bg-[#E46027]/90 text-white font-regular px-6 py-3 rounded">
             Download Brochure
           </button>
-          {/* <button className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-6 py-3 rounded">
-            Register Interest
-          </button> */}
         </div>
       </div>
     </section>

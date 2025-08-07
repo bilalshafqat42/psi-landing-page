@@ -4,19 +4,19 @@ import { FiLayout, FiTrendingUp, FiEdit3 } from "react-icons/fi";
 const AboutSection = () => {
   const features = [
     {
-      icon: <FiLayout className="text-3xl text-gray-800 mx-auto" />,
+      icon: <FiLayout className="text-3xl mx-auto" />,
       title: "01 PLANING",
       description:
         "I initiate the web application development process by strategically.",
     },
     {
-      icon: <FiTrendingUp className="text-3xl text-gray-800 mx-auto" />,
+      icon: <FiTrendingUp className="text-3xl mx-auto" />,
       title: "02 STRATEGIZING",
       description:
         "I initiate the web application development process by strategically.",
     },
     {
-      icon: <FiEdit3 className="text-3xl text-gray-800 mx-auto" />,
+      icon: <FiEdit3 className="text-3xl mx-auto" />,
       title: "03 PROTOTYPING",
       description:
         "I initiate the web application development process by strategically.",
@@ -43,11 +43,11 @@ const AboutSection = () => {
                 key={index}
                 className="lg:col-span-1 lg:pl-8 flex flex-col items-center md:items-start space-y-3"
               >
-                <div className="text-3xl">{feature.icon}</div>
-                <h4 className="font-bold text-gray-900 text-base uppercase">
+                <div className="text-3xl text-[#101954]">{feature.icon}</div>
+                <h4 className="font-bold text-[#101954] text-base uppercase">
                   {feature.title}
                 </h4>
-                <p className="text-sm text-gray-700 leading-relaxed">
+                <p className="text-sm text-[#333] leading-relaxed">
                   {feature.description}
                 </p>
               </div>
