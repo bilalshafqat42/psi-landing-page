@@ -1,5 +1,6 @@
 import React from "react";
-import { FiDownload } from "react-icons/fi";
+// import { FiDownload } from "react-icons/fi";
+import { HiDownload } from "react-icons/hi";
 
 const DownloadBrochure = () => {
   return (
@@ -18,11 +19,17 @@ const DownloadBrochure = () => {
             </div>
             <div className="flex flex-col justify-center items-start py-4">
               <button
+                className="flex flex-row items-center tracking-wide font-body font-normal
+ bg-[#E46027] hover:bg-[#E46027]/90 text-white px-6 py-3 rounded"
+              >
+                Download Brochure <HiDownload className="ml-3" />
+              </button>
+              {/* <button
                 type="submit"
                 className="font-body text-basis select-none flex justify-between items-center relative space-x-4 hover:cursor-pointer bg-white text-[#000000] hover:bg-white/80 transition delay-50 px-6 rounded-full py-3 text-xl uppercase"
               >
                 Download Brochure <FiDownload className="ml-2 text-xl" />
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

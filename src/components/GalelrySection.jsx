@@ -79,7 +79,7 @@ const GallerySection = () => {
               </span>
             </li>
           </ul>
-          <button className="flex flex-row items-center bg-[#E46027] hover:bg-[#E46027]/90 px-6 py-3 rounded text-white font-semibold transition duration-300">
+          <button className="flex flex-row items-center bg-[#E46027] hover:bg-[#E46027]/90 px-6 py-3 rounded text-white font-normal transition duration-300">
             Download Brochure
             <FaLongArrowAltRight className="ml-3" />
           </button>
