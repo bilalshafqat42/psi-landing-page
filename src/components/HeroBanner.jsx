@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -16,8 +17,8 @@ const Hero = () => {
           by Emaar Properties
         </p>
         <div className="flex space-x-4">
-          <button className="tracking-wide font-body bg-[#E46027] hover:bg-[#E46027]/90 text-white font-regular px-6 py-3 rounded">
-            Download Brochure
+          <button className="flex flex-row items-center tracking-wide font-body bg-[#E46027] hover:bg-[#E46027]/90 text-white font-regular px-6 py-3 rounded">
+            Download Brochure <FaLongArrowAltRight className="ml-3" />
           </button>
         </div>
       </div>

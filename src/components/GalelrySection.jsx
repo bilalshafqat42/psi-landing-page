@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Keyboard, Mousewheel, Navigation } from "swiper/modules";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -73,8 +75,9 @@ const GallerySection = () => {
               </span>
             </li>
           </ul>
-          <button className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded text-white font-semibold transition duration-300">
-            Go to Collections <i className="fa-solid fa-arrow-right ml-2"></i>
+          <button className="flex flex-row items-center bg-[#E46027] hover:bg-[#E46027]/90 px-6 py-3 rounded text-white font-semibold transition duration-300">
+            Download Brochure
+            <FaLongArrowAltRight className="ml-3" />
           </button>
         </div>
 
@@ -101,17 +104,17 @@ const GallerySection = () => {
                 onClick={() => setModalImage(slide.src)}
                 style={{ backgroundImage: `url(${slide.src})` }}
               >
-                <span className="inline-block bg-purple-600 px-5 py-2 text-sm rounded-tr-full rounded-br-full absolute top-6 left-0 text-white">
+                {/* <span className="inline-block bg-purple-600 px-5 py-2 text-sm rounded-tr-full rounded-br-full absolute top-6 left-0 text-white">
                   {slide.label}
-                </span>
+                </span> */}
                 {(slide.title || slide.subtitle) && (
                   <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-[90%] text-center text-white">
-                    {slide.title && (
+                    {/* {slide.title && (
                       <h3 className="text-lg font-bold mb-1">{slide.title}</h3>
                     )}
                     {slide.subtitle && (
                       <p className="text-sm text-white/90">{slide.subtitle}</p>
-                    )}
+                    )} */}
                   </div>
                 )}
               </SwiperSlide>
