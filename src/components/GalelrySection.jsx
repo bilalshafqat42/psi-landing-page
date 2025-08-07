@@ -49,10 +49,10 @@ const GallerySection = () => {
       <div className="w-full max-w-[1440px] flex flex-col md:flex-row items-start gap-12 mx-auto">
         {/* Left Content */}
         <div className="md:w-2/5 z-10">
-          <h2 className="text-4xl font-bold leading-tight mb-4">
+          <h2 className="text-3xl text-[#101954] font-bold leading-tight mb-4">
             Welcome to Online Book Store
           </h2>
-          <p className="text-base leading-relaxed mb-6">
+          <p className="font-body text-[#333] text-basis leading-relaxed mb-6">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Repudiandae quam magnam obcaecati error consequatur repellat fugiat,
             deleniti nisi eum voluptates.

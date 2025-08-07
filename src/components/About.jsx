@@ -31,7 +31,7 @@ const AboutSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 text-center md:text-left mb-4">
             <div className="lg:col-span-2 lg:border-r lg:pr-8 flex flex-col items-center md:items-start space-y-4">
               <img src="/passo-dark.png" alt="Logo" className="w-50 h-auto" />
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="font-body text-[#333] text-basis leading-relaxed mb-6">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s.
@@ -44,10 +44,10 @@ const AboutSection = () => {
                 className="lg:col-span-1 lg:pl-8 flex flex-col items-center md:items-start space-y-3"
               >
                 <div className="text-3xl text-[#101954]">{feature.icon}</div>
-                <h4 className="font-bold text-[#101954] text-base uppercase">
+                <h4 className="font-bold text-[#101954] text-lg uppercase">
                   {feature.title}
                 </h4>
-                <p className="text-sm text-[#333] leading-relaxed">
+                <p className="font-body text-[#333] text-basis leading-relaxed mb-6">
                   {feature.description}
                 </p>
               </div>
@@ -71,17 +71,17 @@ const AboutSection = () => {
 
             {/* Right: Text */}
             <div className="text-center md:text-left">
-              <h3 className="text-3xl font-bold mb-4">
+              <h3 className="text-3xl text-[#101954] font-bold mb-4">
                 Vision Behind the Process
               </h3>
-              <p className="text-gray-700 text-sm leading-relaxed mb-4">
+              <p className="font-body text-[#333] text-basis leading-relaxed mb-6">
                 Our approach blends creativity, strategy, and technical
                 precision to deliver top-tier web applications. We focus on
                 scalable, user-first experiences from the first sketch to final
                 deployment. We focus on scalable, user-first experiences from
                 the first sketch to final deployment.
               </p>
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="font-body text-[#333] text-basis leading-relaxed mb-6">
                 Our approach blends creativity, strategy, and technical
                 precision to deliver top-tier web applications. We focus on
                 scalable, user-first experiences from the first sketch to final
