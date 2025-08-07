@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Keyboard, Mousewheel, Navigation } from "swiper/modules";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaBook } from "react-icons/fa";
+import { FaUsers } from "react-icons/fa6";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -49,7 +51,7 @@ const GallerySection = () => {
       <div className="w-full max-w-[1440px] flex flex-col md:flex-row items-start gap-12 mx-auto">
         {/* Left Content */}
         <div className="md:w-2/5 z-10">
-          <h2 className="text-3xl text-[#101954] font-bold leading-tight mb-4">
+          <h2 className="font-heading text-3xl text-[#101954] font-bold leading-tight mb-4">
             Welcome to Online Book Store
           </h2>
           <p className="font-body text-[#333] text-basis leading-relaxed mb-6">
@@ -60,17 +62,19 @@ const GallerySection = () => {
           <ul className="flex gap-8 mb-6">
             <li>
               <h3 className="text-2xl font-semibold">
-                <i className="fa-solid fa-book mr-2"></i>68+k
+                <FaBook className="mb-2" />
+                68+k
               </h3>
-              <span className="text-xs text-gray-600 block mt-1">
+              <span className="font-body text-[#333] text-sm leading-relaxed mt-2">
                 book collections
               </span>
             </li>
             <li>
               <h3 className="text-2xl font-semibold">
-                <i className="fa-solid fa-user mr-2"></i>25,634
+                <FaUsers className="mb-2" />
+                25,634
               </h3>
-              <span className="text-xs text-gray-600 block mt-1">
+              <span className="font-body text-[#333] text-sm leading-relaxed mt-2">
                 customers
               </span>
             </li>
