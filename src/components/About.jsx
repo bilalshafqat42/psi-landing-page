@@ -44,7 +44,7 @@ const AboutSection = () => {
                 className="lg:col-span-1 lg:pl-8 flex flex-col items-center md:items-start space-y-3"
               >
                 <div className="text-3xl text-[#101954]">{feature.icon}</div>
-                <h4 className="font-bold text-[#101954] text-lg font-medium uppercase">
+                <h4 className="text-[#101954] text-lg font-semibold uppercase">
                   {feature.title}
                 </h4>
                 <p className="font-body text-[#333] text-base leading-relaxed mb-6">
@@ -71,7 +71,7 @@ const AboutSection = () => {
 
             {/* Right: Text */}
             <div className="text-center md:text-left">
-              <h3 className="font-heading tracking-wide text-4xl sm:text-7xl lg:text-4xl font-medium leading-tight mb-4 tracking-tight font-light uppercase">
+              <h3 className="font-heading tracking-wide text-4xl sm:text-7xl lg:text-4xl font-semibold leading-tight mb-6 tracking-tight uppercase">
                 Vision Behind the Process
               </h3>
               <p className="font-body text-[#333] text-basis leading-relaxed mb-6">

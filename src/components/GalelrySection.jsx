@@ -51,7 +51,7 @@ const GallerySection = () => {
       <div className="w-full max-w-[1440px] flex flex-col md:flex-row items-start gap-12 mx-auto">
         {/* Left Content */}
         <div className="md:w-2/5 z-10">
-          <h2 className="font-heading tracking-wide text-4xl sm:text-7xl lg:text-4xl font-medium leading-tight mb-4 tracking-tight font-light">
+          <h2 className="font-heading tracking-wide text-4xl sm:text-7xl lg:text-4xl font-semibold leading-tight mb-6 tracking-tight uppercase">
             Welcome to Online Book Store
           </h2>
           <p className="font-body text-[#333] text-basis leading-relaxed mb-6">
@@ -79,9 +79,8 @@ const GallerySection = () => {
               </span>
             </li>
           </ul>
-          <button className="flex flex-row items-center bg-[#E46027] hover:bg-[#E46027]/90 px-6 py-3 rounded text-white font-normal transition duration-300">
-            Download Brochure
-            <FaLongArrowAltRight className="ml-3" />
+          <button className="flex flex-row items-center tracking-wide font-body font-normal bg-[#E46027] hover:bg-[#E46027]/90 text-white font-regular px-6 py-3 rounded text-sm uppercase">
+            Download Brochure <FaLongArrowAltRight className="ml-3" />
           </button>
         </div>
 

@@ -33,8 +33,13 @@ const AmenitiesSection = () => {
   return (
     <section className="text-gray-900 px-6 bg-[#f6f6f6] py-20 font-[Poppins]">
       <div className="max-w-[1440px] mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">Amenities</h2>
-        <p className="text-gray-600 text-sm leading-relaxed mb-16 max-w-xl mx-auto">
+        <h2 className="font-heading tracking-wide text-4xl sm:text-7xl lg:text-4xl font-semibold leading-tight tracking-tight uppercase mb-6">
+          Amenities
+        </h2>
+        <p
+          className="font-body text-[#333] text-base leading-relaxed mb-16
+        leading-relaxed max-w-xl mx-auto"
+        >
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s.
@@ -43,10 +48,10 @@ const AmenitiesSection = () => {
           {amenities.map((item, index) => (
             <div key={index} className="space-y-3">
               <div>{item.icon}</div>
-              <h4 className="text-base font-bold uppercase text-gray-900">
+              <h4 className="text-[#101954] text-lg font-semibold uppercase">
                 {item.title}
               </h4>
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="font-body text-[#333] text-base leading-relaxed mb-6">
                 {item.description}
               </p>
             </div>

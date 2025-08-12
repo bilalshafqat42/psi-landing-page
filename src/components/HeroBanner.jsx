@@ -11,7 +11,7 @@ const Hero = () => {
 
       <div className="relative z-10 flex flex-col items-start justify-end h-full w-full max-w-[1440px] mx-auto px-6 lg:px-0 pb-24">
         <h1
-          className="font-heading tracking-wide text-4xl sm:text-7xl lg:text-4xl font-medium leading-tight mb-4 tracking-tight font-light"
+          className="font-heading tracking-wide text-4xl sm:text-7xl lg:text-4xl font-semibold leading-tight mb-4 tracking-tight font-light"
         >
           ADDRESS BEACHFRONT
         </h1>

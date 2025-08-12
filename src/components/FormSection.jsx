@@ -5,10 +5,10 @@ const FormSection = () => {
     <section className="w-full px-4 py-12 md:py-16 lg:py-20 bg-[#f6f6f6]">
       <div className="max-w-screen-xl mx-auto flex flex-col gap-20 lg:flex-row justify-center items-center">
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
-          <h2 className="text-4xl font-bold uppercase mb-6">
+          <h2 className="font-heading tracking-wide text-4xl sm:text-7xl lg:text-4xl font-semibold leading-tight tracking-tight uppercase mb-6">
             Our Experts will help you buy the best
           </h2>
-          <p className="text-gray-600 text-sm leading-relaxed mb-16 mx-auto">
+          <p className="font-body text-[#333] text-basis leading-relaxed mb-6">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s.

@@ -9,7 +9,7 @@ const DownloadBrochure = () => {
         <div className="rounded-2xl w-full z-20 md:z-0">
           <div className="flex flex-col w-full h-auto px-4 py-3 md:py-6 md:px-8 text-white">
             <div>
-              <h2 className="font-heading text-3xl text-[#fff] uppercase border-b-2 w-fit pb-2 font-bold leading-tight mb-4">
+              <h2 className="font-heading font-semibold tracking-wide text-4xl text-[#fff] uppercase border-b-2 w-fit pb-2 font-light leading-tight mb-4">
                 Download Brochure
               </h2>
               <p className="font-body text-[#fff] text-basis leading-relaxed mt-6 mb-2">
@@ -18,17 +18,14 @@ const DownloadBrochure = () => {
               </p>
             </div>
             <div className="flex flex-col justify-center items-start py-4">
-              <button
+              <button className="flex flex-row items-center tracking-wide font-body font-normal bg-[#E46027] hover:bg-[#E46027]/90 text-white font-regular px-6 py-3 rounded text-sm uppercase">
+                Download Brochure <HiDownload className="ml-3" />
+              </button>
+              {/* <button
                 className="flex flex-row items-center tracking-wide font-body font-normal
  bg-[#E46027] hover:bg-[#E46027]/90 text-white px-6 py-3 rounded"
               >
                 Download Brochure <HiDownload className="ml-3" />
-              </button>
-              {/* <button
-                type="submit"
-                className="font-body text-basis select-none flex justify-between items-center relative space-x-4 hover:cursor-pointer bg-white text-[#000000] hover:bg-white/80 transition delay-50 px-6 rounded-full py-3 text-xl uppercase"
-              >
-                Download Brochure <FiDownload className="ml-2 text-xl" />
               </button> */}
             </div>
           </div>
