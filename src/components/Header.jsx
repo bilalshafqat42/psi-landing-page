@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#101954]/40 text-gray-900 font-sans border-b border-white/10">
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#101954]/80 text-gray-900 font-sans border-b border-white/10">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-0 h-20 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -20,28 +20,24 @@ const Header = () => {
             Home 2
           </a> */}
           <a href="/" className="hover:font-bold transition">
-            BUY
+            ABOUT
           </a>
           <a href="/" className="hover:font-bold transition">
-            RENT
+            GALLERY
           </a>
           <a href="/" className="hover:font-bold transition">
-            PROJECTS
+            BROCHURE
           </a>
           <a href="/" className="hover:font-bold transition">
-            DEVELOPERS
+            AMENITIES
           </a>
           <a href="/" className="hover:font-bold transition">
-            AREAS
+            LOCATION
           </a>
           <a href="/" className="hover:font-bold transition">
-            SERVICES
-          </a>
-          <a href="/" className="hover:font-bold transition">
-            BLOGS
+            CONTACT US
           </a>
         </nav>
-
         {/* <div className="hidden lg:flex items-center space-x-4 text-sm">
           <button className="border border-gray-400 px-4 py-2 rounded hover:bg-gray-100">
             Login

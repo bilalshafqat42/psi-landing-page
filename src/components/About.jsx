@@ -27,7 +27,7 @@ const AboutSection = () => {
     <section className="w-full">
       {/* Features Row */}
       <div className="bg-[#f6f6f6] w-full">
-        <div className="py-20 max-w-[1440px] mx-auto">
+        <div className="py-20 px-6 max-w-[1440px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 text-center md:text-left mb-4">
             <div className="lg:col-span-2 lg:border-r lg:pr-8 flex flex-col items-center md:items-start space-y-4">
               <img src="/passo-dark.png" alt="Logo" className="w-50 h-auto" />
