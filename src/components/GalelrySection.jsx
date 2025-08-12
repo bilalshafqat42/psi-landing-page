@@ -51,7 +51,7 @@ const GallerySection = () => {
       <div className="w-full max-w-[1440px] flex flex-col md:flex-row items-start gap-12 mx-auto">
         {/* Left Content */}
         <div className="md:w-2/5 z-10">
-          <h2 className="font-heading text-3xl text-[#101954] font-bold leading-tight mb-4">
+          <h2 className="font-heading tracking-wide text-4xl sm:text-7xl lg:text-4xl font-medium leading-tight mb-4 tracking-tight font-light">
             Welcome to Online Book Store
           </h2>
           <p className="font-body text-[#333] text-basis leading-relaxed mb-6">
@@ -61,7 +61,7 @@ const GallerySection = () => {
           </p>
           <ul className="flex gap-8 mb-6">
             <li>
-              <h3 className="text-2xl font-semibold">
+              <h3 className="text-2xl font-medium">
                 <FaBook className="mb-2" />
                 68+k
               </h3>
@@ -70,7 +70,7 @@ const GallerySection = () => {
               </span>
             </li>
             <li>
-              <h3 className="text-2xl font-semibold">
+              <h3 className="text-2xl font-medium">
                 <FaUsers className="mb-2" />
                 25,634
               </h3>

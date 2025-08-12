@@ -10,8 +10,9 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/30"></div>
 
       <div className="relative z-10 flex flex-col items-start justify-end h-full w-full max-w-[1440px] mx-auto px-6 lg:px-0 pb-24">
-        <h1 className="font-heading tracking-wide text-4xl sm:text-7xl lg:text-4xl font-extrabold leading-tight mb-4 tracking-tight font-light
-">
+        <h1
+          className="font-heading tracking-wide text-4xl sm:text-7xl lg:text-4xl font-medium leading-tight mb-4 tracking-tight font-light"
+        >
           ADDRESS BEACHFRONT
         </h1>
         <p className="font-button text-xl font-light mb-6">
