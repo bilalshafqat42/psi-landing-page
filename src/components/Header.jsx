@@ -12,7 +12,7 @@ const Header = () => {
         </div>
 
         {/* Nav */}
-        <nav className="hidden lg:flex space-x-12 text-base text-white uppercase font-medium">
+        <nav className="hidden lg:flex space-x-12 text-sm text-white uppercase font-medium">
           {/* <a href="/" className="hover:font-bold transition">
             Home
           </a>

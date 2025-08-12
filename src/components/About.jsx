@@ -71,7 +71,7 @@ const AboutSection = () => {
 
             {/* Right: Text */}
             <div className="text-center md:text-left">
-              <h3 className="text-3xl text-[#101954] font-bold mb-4">
+              <h3 className="text-3xl text-[#101954] uppercase font-bold mb-4">
                 Vision Behind the Process
               </h3>
               <p className="font-body text-[#333] text-basis leading-relaxed mb-6">
